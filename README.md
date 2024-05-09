@@ -1,11 +1,11 @@
 # APUNTES GIT
 apuntes del curso GIT de la SCESI
 ## CLASE 01/05/2024
-### ¿QUE ES UNA RAMA?
+#### ¿QUE ES UNA RAMA?
 Son una instantanea(SnapShot) de la division del estado del codigo.
 Es un apuntador al ultimo commit
 Son como nuna calle que parte de una avenida principal.
-### ¿PARA QUE SIRVEN LAS RAMAS?
+#### ¿PARA QUE SIRVEN LAS RAMAS?
 Trabajo colaborativo
 Desarrollo no lineal y colaborativo
 Cada integrante del Equipo trabaja una parte y luego lo pueden juntar todo en uno.
