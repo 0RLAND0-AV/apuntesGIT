@@ -28,7 +28,7 @@ Comando Git: $git status
 Sirven para guardar los cambios que se han producido en el repositorio.  Creas un punto de restauracion  
 Comando Git: $git commit -m <Comentarios del cambio hechos en el fichero>  
 ### OTROS COMANDOS  
-Comando Git: $git log //Para ver el historial de cambios
+Comando Git: $git log //Para ver el historial de cambios  
               $git commit -amend -m <Comentarios> //Cambia el commit inicial (REVISAR)  
 ### ¿QUE ES HEAD?  
 Es un puntero, te indica en que version estas  
