@@ -19,8 +19,9 @@ Cuando creas ramas tienes dos opciones:
 Se fucionan todas las ramas o bifurcaciones al main.  
 O se quedan en el olvido.  
 ### ¿COM0 FUSIONAR RAMAS?
-Comando Git: $git merge "ramaActual" //Cuando ejecutas estre comando, entonces fusionas la "ramaActual" al main(REVISAR)   
-             $git merge login  
+Comando Git: $git merge "ramaActual" //Cuando ejecutas estre comando, entonces fusionas la "ramaActual" al main(REVISAR)  
+Ejemplo fusionando rama login:  
+  $git merge login  
 ### COMANDO PARA SINCRONIZAR TU RAMA EN LA NUBE
 Comando Git: $git push  
 ### ¿PORQUE ELIMINAMOS LAS RAMAS?
