@@ -1,14 +1,49 @@
 # APUNTES GIT
 apuntes del curso GIT de la SCESI
-## CLASE 01/05/2024
-#### ¿QUE ES UNA RAMA?
-Son una instantanea(SnapShot) de la division del estado del codigo.
-Es un apuntador al ultimo commit
-Son como nuna calle que parte de una avenida principal.
-#### ¿PARA QUE SIRVEN LAS RAMAS?
-Trabajo colaborativo
-Desarrollo no lineal y colaborativo
-Cada integrante del Equipo trabaja una parte y luego lo pueden juntar todo en uno.
+## CLASE 29/04/2024
+### ¿QUE ES GIT?
+Es un control de versiones distribuido.  
+Te registra los cambios que haya en el codigo.  
+Te permite tener un Historico.  
+### ¿QUE ES UN REPOSITORIO?
+Es como un directorio(CARPETA).  
+Hay repositorio Local o Remoto  
+Son donde se almacenan las diferentes versiones de los ficheros de un proyecto y el historico de cambios realizados.  
+### INICIAR EN GIT  
+### ¿Como crear e iniciar un proyecto?//Repositorio  
+Comando Git: $git init <nuevoProyecto>    
+              $cd nuevoProyecto  
+### ¿Como iniciar un proyecto ya creado?  
+Comando Git: $git <directorio del proyecto>    
+              $git init 
+### LOS 3 ESTADOS DE GIT:  
+Modified:Cuando modificamos  
+Staged: Preparamos los cambios a guardar  
+Commited: Cuando guardamos los cambios  
+### Comandos GIT para de los estados  
+Comando Git: $git status  
+              $git add <archivo modificado> //Lo agrega al area Staged  
+              $git commit  
+### ¿Que es un commit?
+Sirven para guardar los cambios que se han producido en el repositorio.  Creas un punto de restauracion  
+Comando Git: $git commit -m <Comentarios del cambio hechos en el fichero>  
+### OTROS COMANDOS  
+Comando Git: $git log //Para ver el historial de cambios
+              $git commit -amend -m <Comentarios> //Cambia el commit inicial (REVISAR)  
+### ¿QUE ES HEAD?  
+Es un puntero, te indica en que version estas  
+Comando Git: $git checkout <ID de la anteriro version>  
+
+  
+## CLASE 01/05/2024  
+### ¿QUE ES UNA RAMA?  
+Son una instantanea(SnapShot) de la division del estado del codigo.  
+Es un apuntador al ultimo commit  
+Son como nuna calle que parte de una avenida principal.  
+### ¿PARA QUE SIRVEN LAS RAMAS?  
+Trabajo colaborativo  
+Desarrollo no lineal y colaborativo  
+Cada integrante del Equipo trabaja una parte y luego lo pueden juntar todo en uno.  
 ### ¿COMO CREAR RAMAS?
 Comando Git: $git branch "miPrimeraRama"
 ### ¿COMO MOVERSE ENTRE RAMAS?
