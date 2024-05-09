@@ -66,15 +66,6 @@ Las ramas deben tener un solo proposito y una vida corta.
 ### ¿Como eleiminar ramas?
 Comando Git: $git branch -d <ramaEliminar>  
               $git branch -D <ramaEliminar> //Esto cuando la rama se la hace a las dificiles, Fuerza Bruta.  
-### RESUMEN COMANDOS CLASE 01/05/2024  
-$git branch //Muestra todas las ramas locales  
-$git branch <NuevaRama> //Creas un nueva rama  
-$git branch -d  <ramaEliminar>  
-$git branch -D  <ramaEliminar>  
-$git merge <nombreRama> //Fusiona Ramas  
-$git switch <nombreRama> //Nos movemos a la rama  
-$git checkout <nombreRama> //Cambiamos de rama  
-$git merge <nombreRama> --no--ff // Fusiona ramas , mezcla ramas (REVISAR)   
 ### CONFLICTOS EN GIT  
 Ocurren cuando al tratar de fusionar 2 ramas ambas presentan diferentes codigos en la misma linea (REVISAR).  
 GIT  no es capaz de determinar que cambios es el que tiene que prevalecer una vez ocurra la FUSION.  
