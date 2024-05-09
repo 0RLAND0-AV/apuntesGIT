@@ -40,20 +40,20 @@ Comando Git: $git checkout <ID de la anteriro version>
 Son una instantanea(SnapShot) de la division del estado del codigo.  
 Es un apuntador al ultimo commit  
 Son como nuna calle que parte de una avenida principal.  
-### ¿PARA QUE SIRVEN LAS RAMAS?  
+### ¿Para que sirven las ramas?  
 Trabajo colaborativo  
 Desarrollo no lineal y colaborativo  
 Cada integrante del Equipo trabaja una parte y luego lo pueden juntar todo en uno.  
-### ¿COMO CREAR RAMAS?
+### ¿Como crear ramas?
 Comando Git: $git branch "miPrimeraRama"
-### ¿COMO MOVERSE ENTRE RAMAS?
+### ¿Como moverse entre ramas?
 Comando Git: $git switch "ramaObjetivo" //Rama a la que nos queremos mover  
              $git checkout -b main "ramaObjetivo" //Rama a la que nos queremos mover  
 ### FUSIONAR RAMAS
 Cuando creas ramas tienes dos opciones:  
 Se fucionan todas las ramas o bifurcaciones al main.  
 O se quedan en el olvido.  
-### ¿COM0 FUSIONAR RAMAS?
+### ¿Como fusionar ramas?
 Comando Git: $git merge "ramaActual" //Cuando ejecutas estre comando, entonces fusionas la "ramaActual" al main(REVISAR)  
 Ejemplo fusionando rama login:  
   $git merge login  
@@ -63,4 +63,20 @@ Comando Git: $git push
 Para ahorrar espacio seas mamon xd.  
 Por buenas practicas.  
 Las ramas deben tener un solo proposito y una vida corta.  
-
+### ¿Como eleiminar ramas?
+Comando Git: $git branch -d <ramaEliminar>  
+              $git branch -D <ramaEliminar> //Esto cuando la rama se la hace a las dificiles, Fuerza Bruta.  
+### RESUMEN COMANDOS CLASE 01/05/2024  
+$git branch //Muestra todas las ramas locales  
+$git branch <NuevaRama> //Creas un nueva rama  
+$git branch -d  <ramaEliminar>  
+$git branch -D  <ramaEliminar>  
+$git merge <nombreRama> //Fusiona Ramas  
+$git switch <nombreRama> //Nos movemos a la rama  
+$git checkout <nombreRama> //Cambiamos de rama  
+$git merge <nombreRama> --no--ff // Fusiona ramas , mezcla ramas (REVISAR)   
+### CONFLICTOS EN GIT  
+Ocurren cuando al tratar de fusionar 2 ramas ambas presentan diferentes codigos en la misma linea (REVISAR).  
+GIT  no es capaz de determinar que cambios es el que tiene que prevalecer una vez ocurra la FUSION.  
+### Como abortar/cancelar un merge  
+Comando Git: $git merge -abort  
