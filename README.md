@@ -5,6 +5,8 @@ apuntes del curso GIT de la SCESI
 Es un control de versiones distribuido.  
 Te registra los cambios que haya en el codigo.  
 Te permite tener un Historico.  
+![image](https://github.com/0RLAND0-AV/apuntesGIT/assets/168796020/5d73b554-7c6d-459d-b28e-0092ab62d43a)
+
 ### ¿QUE ES UN REPOSITORIO?
 Es como un directorio(CARPETA).  
 Hay repositorio Local o Remoto  
@@ -20,6 +22,9 @@ Comando Git: git < directorio del proyecto >
 Modified:Cuando modificamos  
 Staged: Preparamos los cambios a guardar  
 Commited: Cuando guardamos los cambios  
+
+![image](https://github.com/0RLAND0-AV/apuntesGIT/assets/168796020/ca1a6f25-428a-427b-bb5e-e9f0390caf19)
+
 ### Comandos GIT para de los estados  
 Comando Git: $git status    //Muestra el estado de tu repositorio local  
               $git add < archivo modificado > //Lo agrega al area Staged  
@@ -57,6 +62,7 @@ O se quedan en el olvido.
 Comando Git: $git merge < ramaActual > //Cuando ejecutas estre comando, entonces fusionas la "ramaActual" al main(REVISAR)  
 Ejemplo fusionando rama login:  
   $git merge login  
+![image](https://github.com/0RLAND0-AV/apuntesGIT/assets/168796020/6f2cdbdf-31d3-4f91-b4b2-158cb7d96748)
 ### COMANDO PARA SINCRONIZAR TU RAMA EN LA NUBE
 Comando Git: $git push  
 ### ¿PORQUE ELIMINAMOS LAS RAMAS?
@@ -171,6 +177,8 @@ GIT  no es capaz de determinar que cambios es el que tiene que prevalecer una ve
 Comando Git: $git merge -abort  
 ## CLASE 02/05/2024  
 ### GITHUB  
+![image](https://github.com/0RLAND0-AV/apuntesGIT/assets/168796020/0a909ae6-376b-4549-825e-37620cba8c1a)
+
 ### ¿Que es Git-Hub?¿Y para que sirve?  
 GitHub es una plataforma de desarrollo colaborativo basada en Git que permite a los desarrolladores almacenar, gestionar y compartir su código y proyectos de software  
 Un repositorio remoto en Git, como el que ofrece GitHub, es simplemente una copia de tu repositorio local que se almacena en un servidor remoto. Esto permite a los desarrolladores colaborar en proyectos, sincronizar cambios entre diferentes máquinas y mantener un historial completo de cambios para el proyecto. Los repositorios remotos como GitHub son fundamentales para el trabajo colaborativo y la distribución de software de código abierto.(Copiado de ChatGPT)
@@ -196,6 +204,8 @@ Comando Git: $git push origin main //Envia los cambios del main al repositorio r
               $git branch -a //Muestra las ramas remotas y locales  
                $git fetch //Actualiza tu repositorio local en base al repositorio remoto  
                 $git remote remote prune origin //Elimina las ramas remotas de tu repo local  
+![image](https://github.com/0RLAND0-AV/apuntesGIT/assets/168796020/e08a7eff-2ee8-4290-abaa-be8fecdd41c6)
+
 ## CLASE 06/05/2024   
 ### COMANDO GIT PUSH  
 En resumen el push sirve para enviar los cambios al repositorio remoto  
@@ -219,11 +229,15 @@ develop: Es la rama principal de desarrollo. Sirve como base para el desarrollo 
 feature: Se crean a partir de la rama develop para desarrollar nuevas características o funcionalidades específicas. Cada nueva característica se desarrolla en su propia rama feature independiente.  
 release: Se crean a partir de la rama develop para preparar una nueva versión del software para su lanzamiento. Se utilizan para estabilizar el código, realizar pruebas de liberación y preparar la documentación de la versión.  
 hotfix: Se crean a partir de la rama master (o main) para corregir errores críticos en producción de forma urgente. Se fusionan en la rama master (o main) y en la rama develop para corregir el error en ambas ramas.  
+![image](https://github.com/0RLAND0-AV/apuntesGIT/assets/168796020/0a552142-1f60-4518-9d95-bd5791e61e44)
+
 ### GITHUB FLOW
 GitHub Flow es un enfoque más ligero para la gestión de versiones de código fuente con Git. Se centra en la simplicidad y la integración continua, siendo ideal para equipos pequeños o proyectos que se mueven rápido. A diferencia de Gitflow, utiliza menos ramas y tiene un proceso más fluido.  
 ***Ramas utilizadas:***  
 main: La rama principal. Actúa como el centro de todo el código fuente del proyecto. Se trata de la rama estable que contiene el código que está listo para ser implementado.  
 feature: Ramas temporales para desarrollar nuevas características o realizar cambios. Se crean a partir de main y se fusionan de nuevo a main una vez que los cambios se han probado y están listos para su implementación  
+![image](https://github.com/0RLAND0-AV/apuntesGIT/assets/168796020/06bc270d-29c7-41d1-b6fe-a183ef831661)
+
 ### SHIP/SHOW/ASK
 La metodología SHIP, SHOW, ASK es un enfoque de flujo de trabajo utilizado en el desarrollo de software, particularmente para proyectos que utilizan Git y plataformas como GitHub. Su objetivo es equilibrar la velocidad de desarrollo con la revisión del código y la calidad.  
 Categorías de cambios:  
