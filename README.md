@@ -196,21 +196,39 @@ Comando Git: $git push origin main //Envia los cambios del main al repositorio r
               $git branch -a //Muestra las ramas remotas y locales  
                $git fetch //Actualiza tu repositorio local en base al repositorio remoto  
                 $git remote remote prune origin //Elimina las ramas remotas de tu repo local  
-## CLASE 06/05/2024  
-### COMANDO GIT PUSH
-En resumen el push sirve para enviar los cambios al repositorio remoto
-1.    git push origin <branch>   : Envía los cambios de la rama local a la rama correspondiente en el repositorio remoto  origin .
-2.    git push -u origin <branch>   : Configura la rama remota como la rama de seguimiento de la rama local especificada.
-3.    git push origin --delete <branch>   : Elimina la rama especificada del repositorio remoto.
-4.    git push --force   : Fuerza el envío de cambios al repositorio remoto, útil cuando se reescribe la historia del repositorio local.
-### COMANDO GIT PULL
-1.   git pull: El comando básico para obtener los últimos cambios del repositorio remoto y fusionarlos en tu rama local.
-2.   git pull --rebase: Similar a git pull, pero reescribe el historial de commits local para que sea lineal. Útil para evitar conflictos de merge.
-3.   git pull <remote-name> <branch-name>: Permite especificar el repositorio remoto y la rama específica desde la que se desea extraer e integrar los cambios.
-4.   git pull --force: Fuerza la actualización local, incluso si hay conflictos de merge sin resolver. Úsalo con precaución.
-5.   git pull --all: Obtiene e integra los cambios de todas las ramas remotas en tu repositorio local.
-6.   git pull --prune: Elimina las ramas remotas que ya no existen en el repositorio remoto.
-7.   
-
+## CLASE 06/05/2024   
+### COMANDO GIT PUSH  
+En resumen el push sirve para enviar los cambios al repositorio remoto  
+1.    git push origin <branch>   : Envía los cambios de la rama local a la rama correspondiente en el repositorio remoto  origin .  
+2.    git push -u origin <branch>   : Configura la rama remota como la rama de seguimiento de la rama local especificada.   
+3.    git push origin --delete <branch>   : Elimina la rama especificada del repositorio remoto.  
+4.    git push --force   : Fuerza el envío de cambios al repositorio remoto, útil cuando se reescribe la historia del repositorio local.   
+### COMANDO GIT PULL  
+1.   git pull: El comando básico para obtener los últimos cambios del repositorio remoto y fusionarlos en tu rama local.  
+2.   git pull --rebase: Similar a git pull, pero reescribe el historial de commits local para que sea lineal. Útil para evitar conflictos de merge.  
+3.   git pull <remote-name> <branch-name>: Permite especificar el repositorio remoto y la rama específica desde la que se desea extraer e integrar los cambios.  
+4.   git pull --force: Fuerza la actualización local, incluso si hay conflictos de merge sin resolver. Úsalo con precaución.  
+5.   git pull --all: Obtiene e integra los cambios de todas las ramas remotas en tu repositorio local.  
+6.   git pull --prune: Elimina las ramas remotas que ya no existen en el repositorio remoto.  
+### GITFLOW  
+En el flujo de trabajo Gitflow, existen ramas principales y ramas secundarias que se crean a partir de ellas con propósitos específicos. Cada rama tiene un rol definido en el ciclo de desarrollo y contribuye a la estabilidad y control de las versiones.  
+***Ramas principales:***  
+master (o main): Es la rama principal del repositorio. Contiene el código estable y listo para producción. Se considera la rama "oficial" y no debe contener cambios en desarrollo.  
+develop: Es la rama principal de desarrollo. Sirve como base para el desarrollo continuo de nuevas características y mejoras. Se fusionan las ramas secundarias de características en esta rama una vez que se completan y se prueban.  
+***Ramas secundarias:***  
+feature: Se crean a partir de la rama develop para desarrollar nuevas características o funcionalidades específicas. Cada nueva característica se desarrolla en su propia rama feature independiente.  
+release: Se crean a partir de la rama develop para preparar una nueva versión del software para su lanzamiento. Se utilizan para estabilizar el código, realizar pruebas de liberación y preparar la documentación de la versión.  
+hotfix: Se crean a partir de la rama master (o main) para corregir errores críticos en producción de forma urgente. Se fusionan en la rama master (o main) y en la rama develop para corregir el error en ambas ramas.  
+### GITHUB FLOW
+GitHub Flow es un enfoque más ligero para la gestión de versiones de código fuente con Git. Se centra en la simplicidad y la integración continua, siendo ideal para equipos pequeños o proyectos que se mueven rápido. A diferencia de Gitflow, utiliza menos ramas y tiene un proceso más fluido.  
+***Ramas utilizadas:***  
+main: La rama principal. Actúa como el centro de todo el código fuente del proyecto. Se trata de la rama estable que contiene el código que está listo para ser implementado.  
+feature: Ramas temporales para desarrollar nuevas características o realizar cambios. Se crean a partir de main y se fusionan de nuevo a main una vez que los cambios se han probado y están listos para su implementación  
+### SHIP/SHOW/ASK
+La metodología SHIP, SHOW, ASK es un enfoque de flujo de trabajo utilizado en el desarrollo de software, particularmente para proyectos que utilizan Git y plataformas como GitHub. Su objetivo es equilibrar la velocidad de desarrollo con la revisión del código y la calidad.  
+Categorías de cambios:  
+***SHIP (Enviar):*** Son cambios pequeños, de bajo riesgo y bien probados que se pueden fusionar directamente a la rama principal sin necesidad de revisión formal.   
+***SHOW (Mostrar):*** Son cambios más grandes o complejos que se fusionan en la rama principal, pero se crea un pull request para informar a otros desarrolladores y permitir comentarios informales.  
+***ASK (Preguntar):*** Son cambios que requieren una discusión y aprobación explícita antes de fusionarse. Se crea un pull request para revisión y discusión obligatorias.  
 
 
